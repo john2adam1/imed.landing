@@ -28,16 +28,7 @@ export default function Hero() {
             {hero.subtitle}
           </p>
 
-          <div className="mt-10">
-            <a
-              href={hero.primaryCta.href}
-              className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-primary text-white text-lg font-black hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/40 transition-all shadow-2xl shadow-primary/20 active:scale-95 whitespace-nowrap"
-            >
-              {hero.primaryCta.label}
-            </a>
-          </div>
-
-          <h3 className="mt-8 text-slate-900 font-bold text-xl leading-snug max-w-lg">
+          <h3 className="mt-10 text-slate-900 font-bold text-xl leading-snug max-w-lg">
             {hero.appHint}
           </h3>
 

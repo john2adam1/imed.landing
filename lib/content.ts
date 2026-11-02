@@ -29,8 +29,7 @@ export const hero = {
   titleAfter: 'o‘rganing!',
   subtitle:
     'Kompaniyamiz tibbiy ta’lim platformalari, kurslar va mualliflik materiallarini bir joyda rivojlantiradi.',
-  primaryCta: { label: 'iMed platformasi', href: 'https://imedteam.uz' },
-  appHint: 'Yoki mobil ilovani telefoningizga yuklab oling',
+  appHint: 'Mobil ilovani telefoningizga yuklab oling',
   ios: {
     label: 'App Store',
     hint: 'Download on',

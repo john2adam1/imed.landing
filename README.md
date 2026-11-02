@@ -1,6 +1,6 @@
 # iMed Team — kompaniya landing
 
-Kompaniya sayti (`imedteam.uz` talaba kabinetidan alohida).
+Oddiy statik landing sahifa: backend yoki API bilan ulanmaydi. Boshqa loyihalarga havolalar faqat «Mahsulotlarimiz» bo‘limida (`products.items`).
 
 ## Ishga tushirish
 

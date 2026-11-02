@@ -38,12 +38,6 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <a
-              href="https://imedteam.uz"
-              className="hidden lg:inline-flex px-6 py-2.5 rounded-2xl bg-slate-900 text-white text-sm font-bold hover:bg-primary transition-all shadow-lg shadow-slate-900/10 active:scale-95 whitespace-nowrap"
-            >
-              Platformaga kirish
-            </a>
             <button
               type="button"
               className="lg:hidden w-11 h-11 rounded-xl bg-slate-100 flex items-center justify-center"
@@ -74,12 +68,6 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a
-            href="https://imedteam.uz"
-            className="block text-center py-3 rounded-2xl bg-slate-900 text-white font-bold"
-          >
-            Platformaga kirish
-          </a>
         </div>
       )}
     </header>
