@@ -1,6 +1,6 @@
 # iMed Team — kompaniya landing
 
-Oddiy statik landing sahifa: backend yoki API bilan ulanmaydi. Boshqa loyihalarga havolalar faqat «Mahsulotlarimiz» bo‘limida (`products.items`).
+Oddiy statik landing sahifa: backend yoki API bilan ulanmaydi. Loyihalar (TibMentor, MaqolaMed, TIBNOMA) iMed Team MCHJ qoshida: «Loyihalarimiz» bo‘limi (`products.items`), har biri logo va havolalar bilan.
 
 ## Ishga tushirish
 

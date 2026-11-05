@@ -1,12 +1,12 @@
 import { footer, site, socials } from '@/lib/content'
 
-export default function Footer() {
+export default function Footer({ home = true }: { home?: boolean }) {
   return (
     <footer className="bg-white border-t border-slate-100">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="col-span-2">
-            <a href="#home" className="flex items-center gap-3 mb-8 group">
+            <a href={home ? '#home' : '/'} className="flex items-center gap-3 mb-8 group">
               <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
                 <img src={site.logo} alt={site.name} className="w-8 h-8 brightness-0 invert" />
               </div>
@@ -14,7 +14,7 @@ export default function Footer() {
                 {site.name}
               </span>
             </a>
-            <p className="text-slate-500 font-medium text-lg max-w-sm leading-relaxed">{footer.blurb}</p>
+            <p className="text-slate-500 font-medium text-base max-w-sm leading-relaxed">{footer.blurb}</p>
           </div>
 
           <div>

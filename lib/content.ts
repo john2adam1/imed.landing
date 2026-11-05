@@ -8,45 +8,40 @@ export const site = {
   tagline: 'Professional',
   title: 'iMed Team — tibbiy ta’lim platformasi',
   description:
-    'O‘zbekiston tibbiyot talabalari va shifokorlari uchun onlayn ta’lim. iMed, TibMentor va boshqa mahsulotlar.',
+    'O‘zbekiston tibbiyot talabalari va shifokorlari uchun onlayn ta’lim. iMed Team MCHJ loyihalari: TibMentor, MaqolaMed, TIBNOMA.',
   logo: '/assets/logo.png',
-  heroImage: '/assets/masterklass.jpg',
 }
 
 export const nav = [
   { label: 'Bosh sahifa', href: '#home' },
   { label: 'Haqida', href: '#about' },
-  { label: 'Mahsulotlar', href: '#products' },
-  { label: 'Kurslar', href: '#courses' },
+  { label: 'Loyihalar', href: '#products' },
   { label: 'Jamoa', href: '#team' },
   { label: 'Aloqa', href: '#contact' },
 ]
 
 export const hero = {
-  badge: 'iMed Team — Tibbiyot Olami!',
+  badge: 'iMed Team MCHJ — Tibbiyot Olami!',
   titleBefore: 'Tibbiyotni biz bilan',
   titleAccent: 'Tez, oson va sifatli',
   titleAfter: 'o‘rganing!',
   subtitle:
-    'Kompaniyamiz tibbiy ta’lim platformalari, kurslar va mualliflik materiallarini bir joyda rivojlantiradi.',
-  appHint: 'Mobil ilovani telefoningizga yuklab oling',
-  ios: {
-    label: 'App Store',
-    hint: 'Download on',
-    href: 'https://apps.apple.com/uz/app/imed-team/id6745555493',
-  },
-  android: {
-    label: 'Android',
-    hint: 'Yuklab olish',
-    href: 'https://minio.imedteam.uz/imed/imedteam_3.0.0_17.apk',
-  },
+    'iMed Team MCHJ — tibbiy ta’lim platformasi, ilmiy maqolalar va tibbiy adabiyotlar loyihalarini bir joyda rivojlantiradigan jamoa.',
+  primaryCta: { label: 'Loyihalarimiz', href: '#products' },
+  secondaryCta: { label: 'Biz bilan bog‘lanish', href: '#contact' },
+  stats: [
+    { value: '2021', label: 'yildan beri' },
+    { value: '10 000+', label: 'talaba va shifokor' },
+    { value: '3', label: 'ta loyiha' },
+  ],
+  projectsLabel: 'Bizning loyihalar',
 }
 
 export const about = {
   id: 'about',
   title: 'iMed Team haqida',
   paragraphs: [
-    '“iMed Team” tibbiy platformasi 2021-yildan buyon o‘z faoliyatini olib bormoqda. Shu kungacha biz 10 000 dan ziyod talaba va shifokorlarni o‘qitib keldik. Bizda o‘z ustida ishlaydigan shifokor va talabalar doimo yangi bilimlar olib kelishmoqda. Bitiruvchilarimiz turli davlat va xususiy shifoxonalarda malakali mutaxassis bo‘lib ishlab kelishmoqda.',
+    '“iMed Team” MCHJ 2021-yildan buyon tibbiy ta’lim sohasida faoliyat yuritib kelmoqda. Shu kungacha biz 10 000 dan ziyod talaba va shifokorlarni o‘qitib keldik. Bizda o‘z ustida ishlaydigan shifokor va talabalar doimo yangi bilimlar olib kelishmoqda. Bitiruvchilarimiz turli davlat va xususiy shifoxonalarda malakali mutaxassis bo‘lib ishlab kelishmoqda.',
     'Talabalarimiz xalqaro va milliy olimpiadalarda faxrli o‘rinlarni egallab kelishadi. Kurslarimizdagi manbalar xalqaro darajadagi ma’lumotlar asosida tuzilgan va O‘zbekiston muhitiga moslashtirilgan.',
     'Jamoa tarkib topishining asosiy maqsadi — O‘zbekiston tibbiyotini yangi darajaga olib chiqish. Bu bizning eng ustuvor vazifamiz.',
   ],
@@ -60,38 +55,435 @@ export const about = {
   ],
 }
 
+export const maqolamed = {
+  id: 'maqolamed',
+  name: 'MaqolaMed',
+  logo: '/assets/maqolamed.jpg',
+  badge: 'Yangi mahsulot',
+  title: 'Tibbiyotdagi eng muhim yangiliklar bir joyda',
+  tagline: 'Tibbiyot doim yangilanadi. Bilimingiz ham shunday bo‘lishi kerak.',
+  intro: [
+    'Har kuni dunyo bo‘ylab minglab ilmiy maqolalar, klinik tadqiqotlar va yangi tavsiyalar e’lon qilinadi. Ularning barchasini kuzatib borish esa ko‘p vaqt talab qiladi.',
+    'MaqolaMed — tibbiyotdagi eng muhim ilmiy yangiliklarni saralab, o‘zbek tilida, sodda va tushunarli shaklda taqdim etuvchi platforma.',
+  ],
+  // TODO: haqiqiy bot havolasini shu yerda almashtiring
+  botHref: 'https://t.me/maqolamed_bot',
+  botCta: 'Telegram botga o‘tish',
+  why: {
+    title: 'Nega aynan MaqolaMed?',
+    subtitle: 'Minglab maqolalar orasidan eng muhimlari',
+    paragraphs: [
+      'Tibbiyot jadal rivojlanmoqda. Har kuni yangi davolash usullari, diagnostika imkoniyatlari va klinik tadqiqot natijalari paydo bo‘lmoqda.',
+      'Biroq barcha ilmiy jurnallarni muntazam kuzatish, xorijiy maqolalarni o‘qish va eng muhim ma’lumotlarni ajratib olish har doim ham oson emas. MaqolaMed ushbu jarayonni soddalashtirish uchun yaratilgan.',
+      'Bizning maqsadimiz — shifokorlar va tibbiyot talabalariga eng muhim ilmiy ma’lumotlarni qulay, tushunarli va o‘zbek tilida yetkazish.',
+    ],
+  },
+  features: {
+    title: 'MaqolaMed sizga nimalarni taqdim etadi?',
+    items: [
+      {
+        icon: '📚',
+        title: 'Ilmiy maqolalar',
+        text: 'Tibbiyotning turli yo‘nalishlariga oid dolzarb ilmiy maqolalar. Muhim natijalar, klinik ahamiyatga ega xulosalar va amaliyot uchun foydali ma’lumotlar.',
+      },
+      {
+        icon: '🧬',
+        title: 'Yangi tadqiqotlar',
+        text: 'Dunyoning yetakchi ilmiy markazlarida olib borilayotgan klinik tadqiqotlar, yangi davolash yondashuvlari va zamonaviy diagnostika usullari haqida ma’lumotlar.',
+      },
+      {
+        icon: '📋',
+        title: 'Xalqaro klinik qo‘llanmalar',
+        text: 'Klinik amaliyot uchun muhim bo‘lgan xalqaro guideline va tavsiyalardagi yangiliklar. Diagnostika, davolash va profilaktikaga oid dolzarb yondashuvlar.',
+      },
+      {
+        icon: '🌍',
+        title: 'Dalillarga asoslangan tibbiyot',
+        text: 'Ilmiy dalillar asosida klinik qaror qabul qilishga yordam beradigan ma’lumotlar. Tadqiqot natijalarini tushunish va ularning amaliy ahamiyatini baholash imkoniyati.',
+      },
+      {
+        icon: '🇺🇿',
+        title: 'O‘zbek tilidagi kontent',
+        text: 'Xorijiy ilmiy manbalardagi murakkab ma’lumotlar o‘zbek tilida, asosiy mazmuni saqlangan holda, o‘qishga qulay shaklda taqdim etiladi.',
+      },
+      {
+        icon: '⏱',
+        title: 'Vaqtingizni tejang',
+        text: 'O‘nlab ilmiy manbalarni alohida kuzatish o‘rniga, eng muhim yangiliklar bilan yagona platforma orqali tanishing.',
+      },
+    ],
+  },
+  how: {
+    title: 'MaqolaMed qanday ishlaydi?',
+    steps: [
+      {
+        title: 'Ilmiy manbalar o‘rganiladi',
+        text: 'Tibbiyot sohasidagi xalqaro ilmiy maqolalar, tadqiqotlar va klinik tavsiyalar kuzatib boriladi.',
+      },
+      {
+        title: 'Muhim ma’lumotlar saralanadi',
+        text: 'Klinik ahamiyati yuqori, dolzarb va amaliyot uchun foydali mavzular tanlab olinadi.',
+      },
+      {
+        title: 'O‘zbek tilida tayyorlanadi',
+        text: 'Tanlangan ma’lumotlar tushunarli, tartibli va o‘qishga qulay maqola shakliga keltiriladi.',
+      },
+      {
+        title: 'Sizga taqdim etiladi',
+        text: 'Tayyor maqolalar MaqolaMed Telegram boti orqali o‘quvchilarga yetkaziladi.',
+      },
+    ],
+  },
+  audience: {
+    title: 'MaqolaMed kimlar uchun?',
+    items: [
+      {
+        title: 'Tibbiyot talabalari uchun',
+        text: 'Darsliklardan tashqari zamonaviy ilmiy bilimlarni egallash, yangi tadqiqotlar bilan tanishish va klinik fikrlashni rivojlantirish uchun.',
+      },
+      {
+        title: 'Shifokorlar uchun',
+        text: 'Kundalik klinik amaliyotda ahamiyatli bo‘lgan yangi ilmiy dalillar, diagnostika va davolash yondashuvlaridan xabardor bo‘lish uchun.',
+      },
+      {
+        title: 'Rezidentlar va klinik ordinatorlar uchun',
+        text: 'Mutaxassislik bo‘yicha bilimlarni chuqurlashtirish, xalqaro klinik tavsiyalarni o‘rganish va ilmiy yangiliklarni kuzatish uchun.',
+      },
+      {
+        title: 'Ilmiy tadqiqotchilar uchun',
+        text: 'Dolzarb ilmiy yo‘nalishlar, yangi tadqiqot natijalari va xalqaro tibbiyotdagi o‘zgarishlar bilan tanishish uchun.',
+      },
+    ],
+  },
+  premium: {
+    title: 'Premium — bilimlaringizga investitsiya',
+    subtitle: 'Tibbiyotdagi eng muhim yangiliklarni o‘tkazib yubormang.',
+    text: 'MaqolaMed Premium obunasi orqali platformaning kengaytirilgan imkoniyatlaridan foydalaning va ilmiy bilimlaringizni muntazam rivojlantirib boring.',
+    items: [
+      'Muhim ilmiy maqolalar',
+      'Yangi klinik tadqiqotlar',
+      'Xalqaro guideline yangiliklari',
+      'O‘zbek tilida o‘qishga qulay kontent',
+      'Bilimlarni doimiy yangilab borish imkoniyati',
+    ],
+    cta: 'Premium obunani tanlash',
+  },
+  faq: {
+    title: 'Tez-tez beriladigan savollar',
+    items: [
+      {
+        q: 'MaqolaMed nima?',
+        a: 'MaqolaMed — tibbiyotdagi muhim ilmiy maqolalar, klinik tadqiqotlar va xalqaro tavsiyalarni o‘zbek tilida taqdim etuvchi platforma.',
+      },
+      {
+        q: 'Maqolalar qaysi tilda taqdim etiladi?',
+        a: 'Asosiy kontent o‘zbek tilida, tibbiy terminologiya va ilmiy mazmun saqlangan holda tayyorlanadi.',
+      },
+      {
+        q: 'MaqolaMed kimlar uchun mo‘ljallangan?',
+        a: 'Tibbiyot talabalari, amaliyotchi shifokorlar, rezidentlar, ilmiy tadqiqotchilar va zamonaviy tibbiyotga qiziquvchilar uchun.',
+      },
+      {
+        q: 'Platformadan qanday foydalanish mumkin?',
+        a: 'Telegram orqali MaqolaMed botiga kirib, mavjud maqolalar va obuna imkoniyatlari bilan tanishishingiz mumkin.',
+      },
+      {
+        q: 'MaqolaMed klinik qaror qabul qilishda yordam beradimi?',
+        a: 'Platforma ilmiy bilimlarni yangilashga xizmat qiladi. Undagi materiallar mustaqil klinik qaror yoki bemorga individual davolash tavsiyasi o‘rnini bosmaydi.',
+      },
+    ],
+  },
+  final: {
+    title: 'Tibbiyot rivojlanmoqda. Siz ham rivojlaning!',
+    text: 'Ilmiy yangiliklarni kuzatish uchun soatlab vaqt sarflash shart emas. MaqolaMed bilan zamonaviy tibbiyotdagi muhim o‘zgarishlardan xabardor bo‘ling, bilimingizni muntazam oshiring va dalillarga asoslangan tibbiyotga bir qadam yaqinlashing.',
+    motto: 'MaqolaMed — ilm-fan va amaliyot o‘rtasidagi ko‘prik.',
+    cta: 'MaqolaMed’ga qo‘shilish',
+  },
+}
+
+export const tibnoma = {
+  id: 'tibnoma',
+  name: 'TIBNOMA',
+  logo: '/assets/tibnoma.jpg',
+  badge: 'iMed Team MCHJ loyihasi',
+  title: 'Tibbiyot olamida yangi sahifa!',
+  tagline: 'Tibbiy bilim sari navbatdagi qadamingizni biz bilan boshlang!',
+  intro: [
+    'TIBNOMA — iMed Team MCHJ tomonidan tashkil etilgan, tibbiy adabiyotlarni targ‘ib qilish, sifatli kitoblarni ommalashtirish va tibbiy mutolaa madaniyatini rivojlantirishga qaratilgan loyiha.',
+    'Platforma orqali tibbiyot talabalari, shifokorlar, rezidentlar va ilmiy izlanish olib borayotgan mutaxassislar o‘zbek, rus va ingliz tillaridagi foydali tibbiy adabiyotlar bilan tanishishlari hamda kerakli kitoblarni buyurtma asosida xarid qilishlari mumkin.',
+  ],
+  // TODO: haqiqiy havolalarni shu yerda almashtiring
+  telegramHref: 'https://t.me/tibnoma',
+  instagramHref: 'https://instagram.com/tibnoma',
+  booksCta: 'Kitoblar bilan tanishish',
+  telegramCta: 'Telegram kanalga o‘tish',
+  about: {
+    title: 'TIBNOMA haqida',
+    subtitle: 'Har bir yaxshi shifokorning ortida yuzlab o‘qilgan kitoblar turadi.',
+    paragraphs: [
+      'Tibbiyot — doimiy izlanish, o‘rganish va bilimlarni yangilab borishni talab qiladigan soha. Sifatli tibbiy adabiyotlar esa bu jarayonning ajralmas qismidir.',
+      'Bugungi kunda tibbiyotga oid minglab darsliklar, qo‘llanmalar va ilmiy nashrlar mavjud. Ammo ular orasidan ishonchli, tushunarli va amaliyot uchun foydali kitoblarni tanlash har doim ham oson emas.',
+      'TIBNOMA aynan shu ehtiyojdan kelib chiqib yaratilgan.',
+      'Bizning maqsadimiz — tibbiyot ahlini sifatli adabiyotlar bilan tanishtirish, kitob tanlash jarayonini osonlashtirish va tibbiy mutolaani kundalik kasbiy rivojlanishning muhim qismiga aylantirish.',
+    ],
+  },
+  offers: {
+    title: 'TIBNOMA sizga nimalarni taklif etadi?',
+    items: [
+      {
+        icon: '📚',
+        title: 'Tibbiy kitoblar tavsiyalari',
+        text: 'Tibbiyotning fundamental, preklinik va klinik yo‘nalishlariga oid foydali darsliklar, qo‘llanmalar va ilmiy adabiyotlar tavsiyalari.',
+      },
+      {
+        icon: '📖',
+        title: 'iMed Team mualliflik adabiyotlari',
+        text: 'iMed Team tomonidan tayyorlangan tibbiy darsliklar va o‘quv qo‘llanmalar. Murakkab tibbiy mavzularni sodda, tizimli va tushunarli shaklda o‘rganishga yordam beruvchi adabiyotlar.',
+      },
+      {
+        icon: '🔎',
+        title: 'Kitob sharhlari',
+        text: 'Tibbiy kitoblarning mazmuni, asosiy afzalliklari, qamrab olgan mavzulari va kimlar uchun foydali ekanligi haqida sharhlar.',
+      },
+      {
+        icon: '🌐',
+        title: 'Uch tildagi tibbiy adabiyotlar',
+        text: 'O‘zbek, rus va ingliz tillaridagi tibbiy kitoblar bilan tanishish imkoniyati. Mahalliy va xalqaro adabiyotlar orqali bilim doirangizni kengaytiring.',
+      },
+      {
+        icon: '🛒',
+        title: 'Buyurtma asosida xarid qilish',
+        text: 'O‘zingizga kerakli tibbiy kitoblarni tanlang va mavjud buyurtma imkoniyatlari orqali xarid qiling.',
+      },
+    ],
+  },
+  why: {
+    title: 'Nega aynan TIBNOMA?',
+    items: [
+      {
+        title: 'Sifatli adabiyotlar tanlovi',
+        text: 'Tibbiy ta’lim va kasbiy rivojlanish uchun foydali kitoblarga e’tibor qaratiladi.',
+      },
+      {
+        title: 'Kitob tanlashda qulaylik',
+        text: 'Sharhlar va tavsiyalar orqali o‘zingizga mos adabiyotlarni osonroq topishingiz mumkin.',
+      },
+      {
+        title: 'Mahalliy va xalqaro adabiyotlar',
+        text: 'O‘zbek, rus va ingliz tillaridagi kitoblar bilan bir platforma orqali tanishing.',
+      },
+      {
+        title: 'Ta’lim va amaliyot uyg‘unligi',
+        text: 'Tibbiyot talabalari uchun fundamental bilimlardan tortib, amaliyotchi shifokorlar uchun klinik qo‘llanmalargacha bo‘lgan adabiyotlar.',
+      },
+    ],
+  },
+  audience: {
+    title: 'TIBNOMA kimlar uchun?',
+    items: [
+      {
+        title: 'Tibbiyot talabalari uchun',
+        text: 'Fundamental fanlarni puxta o‘zlashtirish, imtihonlarga tayyorlanish va klinik bilimlarni shakllantirish uchun.',
+      },
+      {
+        title: 'Shifokorlar uchun',
+        text: 'Mutaxassislik bo‘yicha bilimlarni yangilash, klinik tafakkurni rivojlantirish va kasbiy malakani oshirish uchun.',
+      },
+      {
+        title: 'Rezidentlar va klinik ordinatorlar uchun',
+        text: 'Tanlangan mutaxassislikni chuqur o‘rganish va zamonaviy tibbiy adabiyotlardan foydalanish uchun.',
+      },
+      {
+        title: 'Tibbiyot o‘qituvchilari va tadqiqotchilar uchun',
+        text: 'Ta’lim, ilmiy faoliyat va mustaqil izlanishlarda foydalaniladigan adabiyotlarni topish uchun.',
+      },
+    ],
+  },
+  order: {
+    title: 'Kitobni qanday buyurtma qilish mumkin?',
+    steps: [
+      {
+        title: 'Kitob tanlang',
+        text: 'TIBNOMA sahifalarida taqdim etilgan tibbiy adabiyotlar va ularning sharhlari bilan tanishing.',
+      },
+      {
+        title: 'Buyurtma uchun murojaat qiling',
+        text: 'O‘zingizga kerakli kitob bo‘yicha Telegram yoki Instagram orqali bog‘laning.',
+      },
+      {
+        title: 'Buyurtmani kelishib oling',
+        text: 'Kitobning mavjudligi, narxi, to‘lov va yetkazib berish shartlarini aniqlashtiring.',
+      },
+      {
+        title: 'Bilim sari yangi qadam qo‘ying',
+        text: 'Tanlagan adabiyotingiz yordamida tibbiy bilimlaringizni yanada rivojlantiring.',
+      },
+    ],
+  },
+  final: {
+    title: 'Bilimga kiritilgan eng yaxshi investitsiya — kitob!',
+    text: 'Tibbiyotda mukammallikka erishish doimiy mutolaa va izlanishdan boshlanadi. TIBNOMA bilan sifatli tibbiy adabiyotlarni kashf eting, yangi kitoblar haqida ma’lumot oling va o‘z kasbiy rivojlanishingiz uchun muhim manbalarni toping.',
+    motto: 'TIBNOMA — tibbiy bilim va kitobxonlikni birlashtiruvchi loyiha.',
+    telegramCta: 'Telegram kanalga obuna bo‘lish',
+    instagramCta: 'Instagram sahifasiga o‘tish',
+    note: 'TIBNOMA — iMed Team MCHJ loyihasi.',
+  },
+}
+
+export const tibmentor = {
+  id: 'tibmentor',
+  name: 'TibMentor',
+  logo: '/assets/tibmentor.png',
+  badge: 'Yangilangan platforma',
+  title: 'Tibbiyotni video, audio va testlar orqali o‘rganing',
+  tagline: 'Tibbiyot talabalari va shifokorlar uchun onlayn ta’lim platformasi.',
+  intro: [
+    'TibMentor — video darslar, o‘quv materiallari, audio darslar va ilova ichidagi testlarni bir joyga jamlagan tibbiy ta’lim platformasi. Web-sayt va mobil ilova orqali istalgan vaqtda o‘rganing.',
+    'Fundamental, preklinik va klinik fanlar bo‘yicha kurslar, har bir mavzu uchun testlar, reyting va shaxsiy kabinet — hammasi bitta joyda.',
+  ],
+  // TODO: kerak bo‘lsa haqiqiy havolani almashtiring
+  siteHref: 'https://tibmentor.uz',
+  siteCta: 'Platformaga kirish',
+  appHint: 'Mobil ilovani telefoningizga yuklab oling',
+  ios: {
+    label: 'App Store',
+    hint: 'Download on',
+    href: 'https://apps.apple.com/uz/app/imed-team/id6745555493',
+  },
+  android: {
+    label: 'Android',
+    hint: 'Yuklab olish',
+    href: 'https://minio.imedteam.uz/imed/imedteam_3.0.0_17.apk',
+  },
+  features: {
+    title: 'TibMentor imkoniyatlari',
+    items: [
+      {
+        icon: '🎬',
+        title: 'Video darslar',
+        text: 'Ustoz shifokorlar tomonidan tayyorlangan, modullarga bo‘lingan tizimli video darslar.',
+      },
+      {
+        icon: '🎧',
+        title: 'Audio darslar',
+        text: 'Yo‘lda yoki bo‘sh vaqtingizda mavzularni tinglab o‘rganing.',
+      },
+      {
+        icon: '📄',
+        title: 'Hujjat va materiallar',
+        text: 'Har bir dars uchun qo‘shimcha o‘quv materiallari va konspektlar.',
+      },
+      {
+        icon: '✅',
+        title: 'Ilova ichidagi testlar',
+        text: 'Mavzuni o‘rgangach, testni to‘g‘ridan-to‘g‘ri ilovaning o‘zida ishlang. Javob tanlangan zahoti to‘g‘ri variant yashil, xato variant qizil bo‘ladi.',
+      },
+      {
+        icon: '📊',
+        title: 'Natija va qayta urinish',
+        text: 'Test yakunida natija foizda ko‘rsatiladi. Keyingi mavzuga o‘tishingiz yoki testni qayta ishlashingiz mumkin.',
+      },
+      {
+        icon: '🏆',
+        title: 'Reyting',
+        text: 'O‘qish vaqti va test natijalari bo‘yicha alohida reytinglar. O‘z o‘rningizni doim ko‘rib turasiz.',
+      },
+    ],
+  },
+  premium: {
+    title: 'Fan bo‘yicha Premium',
+    subtitle: 'Faqat kerakli fanni oching.',
+    text: 'Premium fanlar bo‘yicha oylik obuna asosida beriladi. Tanlangan fan Premiumi shu fanning barcha kurslarini ochadi. To‘lov Click orqali amalga oshiriladi, obuna muddati profilingizda ko‘rinib turadi.',
+    items: [
+      'Fundamental fanlar',
+      'Preklinik fanlar',
+      'Klinik fanlar',
+      'Oylik to‘lov — Click orqali',
+      'Promokod orqali chegirma imkoniyati',
+    ],
+  },
+  how: {
+    title: 'Qanday ishlaydi?',
+    steps: [
+      {
+        title: 'Ro‘yxatdan o‘ting',
+        text: 'Web-sayt yoki mobil ilova orqali hisob yarating.',
+      },
+      {
+        title: 'Kursni tanlang',
+        text: 'Fundamental, preklinik yoki klinik fanlar ichidan kerakli kursni toping.',
+      },
+      {
+        title: 'O‘rganing va test ishlang',
+        text: 'Video, audio va materiallar bilan o‘rganing, so‘ng mavzu testini ilovaning o‘zida ishlang.',
+      },
+      {
+        title: 'Rivojlaning',
+        text: 'Reytingda o‘z o‘rningizni kuzating, kunlik o‘qishni davom ettiring.',
+      },
+    ],
+  },
+  extra: {
+    title: 'Foydalanuvchi uchun qulayliklar',
+    items: [
+      'Bo‘sh bo‘limlar yo‘q: darsda faqat joylangan kontent turi ko‘rinadi',
+      'Profilda Premium holati va test natijalari tarixi',
+      'Dars qilmagan kunlarda yumshoq eslatma (push-xabarnoma)',
+      'Yangi materiallar haqida ustozlar yuboradigan xabarnomalar',
+      '“Ustoz” belgisi: kontent yaratuvchi ustozlar uchun barcha kurslar ochiq',
+      'Web-sayt va mobil ilova (iOS va Android)',
+    ],
+  },
+  final: {
+    title: 'Bilimingizni bugundan boshlab mustahkamlang',
+    text: 'TibMentor bilan tibbiyotni tez, oson va sifatli o‘rganing.',
+  },
+}
+
 export const products = {
   id: 'products',
-  title: 'Mahsulotlarimiz',
+  title: 'Loyihalarimiz',
   subtitle:
-    'Bitta jamoa — bir nechta tibbiy ta’lim mahsuloti. Ertaga yangi loyiha qo‘shilsa, shu ro‘yxatga yozamiz.',
+    'iMed Team MCHJ qoshida tibbiyot talabalari va shifokorlar uchun bir nechta mustaqil loyiha faoliyat yuritadi.',
   items: [
     {
-      name: 'iMed',
-      status: 'Ishlamoqda',
-      statusTone: 'live' as const,
-      description:
-        'Talaba va shifokorlar uchun asosiy ta’lim platformasi: kurslar, videolar, hujjatlar, reyting va kabinet. Web va mobil ilova.',
-      href: 'https://imedteam.uz',
-      cta: 'Platformaga o‘tish',
-    },
-    {
       name: 'TibMentor',
+      logo: tibmentor.logo,
+      logoShape: 'square' as const,
       status: 'Yangilanmoqda',
       statusTone: 'soon' as const,
       description:
-        'Tibbiy ta’limning yangi versiyasi: Premium paketlar (Fundamental, Preklinik, Klinik), ilova ichidagi testlar, audio darslar va ustoz unvoni.',
-      href: '#contact',
-      cta: 'Tez orada',
+        'Tibbiy ta’lim platformasi: video va audio darslar, fan bo‘yicha Premium, ilova ichidagi testlar, reyting va ustoz unvoni. Web va mobil ilova.',
+      href: '/tibmentor',
+      cta: 'Batafsil ma’lumot',
+      links: [{ label: 'Website', href: tibmentor.siteHref }],
     },
     {
       name: 'MaqolaMed',
-      status: 'Tayyorlanmoqda',
-      statusTone: 'soon' as const,
+      logo: maqolamed.logo,
+      logoShape: 'square' as const,
+      status: 'Ishlamoqda',
+      statusTone: 'live' as const,
       description:
-        'Tibbiy ta’lim jamoasining yangi mahsuloti. Batafsil ma’lumot va havola tez orada e’lon qilinadi.',
-      href: '#contact',
-      cta: 'Ma’lumot kutilmoqda',
+        'Tibbiyotdagi eng muhim ilmiy maqolalar, yangi tadqiqotlar va xalqaro klinik qo‘llanmalar — o‘zbek tilida, sodda va tushunarli shaklda.',
+      href: '/maqolamed',
+      cta: 'Batafsil ma’lumot',
+      links: [{ label: 'Telegram bot', href: maqolamed.botHref }],
+    },
+    {
+      name: 'TIBNOMA',
+      logo: tibnoma.logo,
+      logoShape: 'circle' as const,
+      status: 'Ishlamoqda',
+      statusTone: 'live' as const,
+      description:
+        'Tibbiy adabiyotlarni targ‘ib qilish, kitob sharhlari va buyurtma asosida xarid qilish loyihasi. O‘zbek, rus va ingliz tillaridagi kitoblar.',
+      href: '/tibnoma',
+      cta: 'Batafsil ma’lumot',
+      links: [
+        { label: 'Telegram kanal', href: tibnoma.telegramHref },
+        { label: 'Instagram', href: tibnoma.instagramHref },
+      ],
     },
   ],
 }
@@ -310,5 +702,5 @@ export const socials = [
 export const footer = {
   blurb: 'O‘zbekiston tibbiyotini yangi darajaga olib chiqish — bizning eng ustuvor vazifamiz!',
   socialsTitle: 'Ijtimoiy tarmoqlar',
-  copyright: 'iMed Team. Barcha huquqlar himoyalangan.',
+  copyright: 'iMed Team MCHJ. Barcha huquqlar himoyalangan.',
 }

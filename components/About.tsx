@@ -2,7 +2,7 @@ import { about } from '@/lib/content'
 
 export default function About() {
   return (
-    <section id={about.id} className="py-24 bg-white relative overflow-hidden">
+    <section id={about.id} className="py-16 sm:py-20 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 -z-10" />
 
       <div className="max-w-7xl mx-auto px-6">

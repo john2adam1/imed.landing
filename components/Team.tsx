@@ -8,23 +8,23 @@ export default function Team() {
   const visible = showAll ? team.members : team.members.slice(0, team.visibleCount)
 
   return (
-    <section id={team.id} className="py-20 bg-white relative">
+    <section id={team.id} className="py-16 sm:py-20 bg-white relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="reveal text-center max-w-3xl mx-auto mb-10">
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
             {team.title}
           </h2>
-          <p className="text-slate-500 mt-6 text-lg font-medium leading-relaxed">{team.subtitle}</p>
+          <p className="text-slate-500 mt-4 text-base sm:text-lg font-medium leading-relaxed">{team.subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {visible.map((member, idx) => (
             <div
               key={member.name}
-              className="reveal group bg-slate-900 rounded-3xl p-8 shadow-2xl shadow-slate-900/10 border border-white/5 hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2 text-center"
+              className="reveal group bg-slate-900 rounded-3xl p-6 shadow-xl shadow-slate-900/10 border border-white/5 hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1 text-center"
               style={{ transitionDelay: `${idx * 40}ms` }}
             >
-              <div className="relative mx-auto w-24 h-24 mb-6">
+              <div className="relative mx-auto w-20 h-20 mb-5">
                 <div className="absolute inset-0 bg-primary/20 rounded-full rotate-3 group-hover:rotate-6 transition-transform" />
                 <div className="absolute inset-0 bg-slate-800 rounded-full overflow-hidden border-2 border-white/10">
                   <img
@@ -40,21 +40,21 @@ export default function Team() {
                   />
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-lg font-bold text-white mb-1.5 group-hover:text-primary transition-colors">
                 {member.name}
               </h3>
-              <p className="text-primary text-xs font-bold uppercase tracking-widest mb-4">{member.role}</p>
-              <p className="text-slate-400 text-sm font-medium leading-relaxed line-clamp-4">{member.desc}</p>
+              <p className="text-primary text-xs font-bold uppercase tracking-widest mb-3">{member.role}</p>
+              <p className="text-slate-400 text-[13px] font-medium leading-relaxed line-clamp-4">{member.desc}</p>
             </div>
           ))}
         </div>
 
         {team.members.length > team.visibleCount && (
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-10">
             <button
               type="button"
               onClick={() => setShowAll((v) => !v)}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-2xl font-semibold hover:bg-primary transition-all shadow-lg"
+              className="inline-flex items-center gap-3 px-7 py-3.5 bg-slate-900 text-white rounded-2xl font-semibold hover:bg-primary transition-all shadow-lg"
             >
               {showAll
                 ? 'Kamroq ko‘rish'
